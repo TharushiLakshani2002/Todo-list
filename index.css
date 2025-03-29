@@ -1,0 +1,111 @@
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bab1d3;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #161617;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive image styling */
+.responsive-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Box styling */
+.box-style {
+    background-color: #d4cbde;
+    box-shadow: 10px 10px 10px #aba7bc;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Grid layout for todo input */
+.todo-input-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .todo-input-grid {
+        grid-template-columns: 2fr 1fr auto;
+    }
+}
+
+/* Input and button styling */
+.name-input,
+.due-date-input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-todo-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-todo-button:hover {
+    background-color: darkgreen;
+}
+
+/* Todo grid styling */
+.todo-grid {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Button styling for delete button */
+.delete-todo-button {
+    background-color: #c03f3f;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.delete-todo-button:hover {
+    background-color: darkred;
+}
+
+/* Ensuring text shadow doesn't affect readability */
+.title {
+    text-shadow: 1px 1px #aba7bc;
+}
